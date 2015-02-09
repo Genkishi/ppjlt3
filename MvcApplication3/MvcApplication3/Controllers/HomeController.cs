@@ -46,8 +46,13 @@ namespace MvcApplication3.Controllers
             ViewData["Clients"] = clients.ObtenirListeClients();
             return View();
         }
-       
 
+        public ActionResult ListeMedicament()
+        {
+            Produits produits = new Produits();
+            ViewData["Produits"] = produits.ObtenirListeProduits();
+            return View();
+        }
         public ActionResult ChercheClient(string id)
         {
             ViewData["Nom"] = id;
