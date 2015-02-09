@@ -1,0 +1,39 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @Html.Partial("~/Views/Client/_Header.cshtml")
+    @Html.Partial("~/Views/Client/_MenuProfil.cshtml")
+    <div>
+        <fieldset>
+            <legend>Commandes</legend>
+            <input type="button" value="Retour" name="retour" onclick="location.href='@Url.Action("Historique", "Client")'" />
+            @foreach (var produit in listeproduit)
+            {
+                <label style="float:left">image</label>
+                <table>
+                    <tr>
+                        <td>produit.nom</td>
+                        <td>Quantité : produit.quantité</td>
+                    </tr>
+                    <tr>
+                        <td>produit.prixunitaire</td>
+                        <td>produit.prixtotal</td>
+                    </tr>
+                </table>
+                <hr />
+            }
+            <label>Total de la commande : commande.total</label>
+        </fieldset>
+    </div>
+
+</body>
+</html>

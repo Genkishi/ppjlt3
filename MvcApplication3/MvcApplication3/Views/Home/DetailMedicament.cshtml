@@ -1,0 +1,21 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>PharmaWeb</title>
+</head>
+<body>
+    @Html.Partial("~/Views/Home/_Header.cshtml")
+    @Html.Partial("~/Views/Home/_Menu.cshtml")
+    <div>
+        <label>image</label><br />
+        @Html.Label(medicament.Nom)<br />
+        @Html.Label(medicament.Prix, "€")<br />
+        <input type="button" value="Ajout au panier" />
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>PharmaWeb</title>
+</head>
+<body>
+    @Html.Partial("~/Views/Client/_Header.cshtml")
+    @Html.Partial("~/Views/Client/_MenuProfil.cshtml")
+    <div>
+        <fieldset>
+            <legend>Commandes</legend>
+            <table style="border:1px solid black">
+                <tr style="border:1px solid black">
+                    <th style="border:1px solid black">Date de la commande</th>
+                    <th style="border:1px solid black">Coût de la commande</th>
+                    <th style="border:1px solid black">Etat de la commande</th>
+                    <th style="border:1px solid black">Voir les détails</th>
+                </tr>
+                @foreach (var commande in listcommande)
+                {
+                    <tr>
+                        <td>commande.date</td>
+                        <td>commande.prix</td>
+                        <td>commande.statue</td>
+                        <td>@Html.ActionLink("Détails", "DetailCommande", "Client")</td>
+                    </tr>
+                }
+            </table>
+        </fieldset>
+    </div>
+</body>
+</html>

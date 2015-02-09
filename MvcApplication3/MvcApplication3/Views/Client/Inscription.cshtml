@@ -1,0 +1,86 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>PharmaWeb</title>
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_HeaderOffline.cshtml")
+    @Html.Partial("~/Views/Client/_Menu.cshtml")
+    <div>
+        <fieldset>
+            <legend>Formulaire d'inscription</legend>
+            @using (Html.BeginForm())
+            {
+                <table>
+                    <tr>
+                        <td><label>Nom</label></td>
+                        <td>@Html.TextBox("nom", null, new { style = "width : 150px" })</td>
+                    </tr>
+                    <tr>
+                        <td><label>Prénom</label></td>
+                        <td>@Html.TextBox("prenom", null, new { style = "width : 150px" })</td>
+                    </tr>
+                    <tr>
+                        <td><label>Login</label></td>
+                        <td>@Html.TextBox("login", null, new { style = "width : 150px" })</td>
+                    </tr>
+                    <tr>
+                        <td><label>Mot de passe</label></td>
+                        <td>@Html.Password("password", null, new { style = "width : 150px" })</td>
+                    </tr>
+                    <tr>
+                        <td><label>Confirmation mot de passe</label></td>
+                        <td>@Html.Password("confirmpassword", null, new { style = "width : 150px" })</td>
+                    </tr>
+                    <tr>
+                        <td><label>Adresse</label></td>
+                        <td>@Html.TextBox("adresse", null, new { style = "width : 150px" })</td>
+                    </tr>
+                    <tr>
+                        <td><label>Ville</label></td>
+                        <td>@Html.TextBox("ville", null, new { style = "width : 150px" })</td>
+                    </tr>
+                    <tr>
+                        <td><label>Code Postal</label></td>
+                        <td>@Html.TextBox("codepostal", null, new { style = "width : 150px" })</td>
+                    </tr>
+                    <tr>
+                        <td><label>Date de naissance</label></td>
+                        <td>@Html.TextBox("date_naissance", null, new { style = "width : 150px" })</td>
+                    </tr>
+                    <tr>
+                        <td><label>N° Téléphone</label></td>
+                        <td>@Html.TextBox("telephone", null, new { style = "width : 150px" })</td>
+                    </tr>
+                    <tr>
+                        <td><label>Adresse Mail</label></td>
+                        <td>@Html.TextBox("mail", null, new { style = "width : 150px" })</td>
+                    </tr>
+                    <tr>
+                        <td><label>N° Sécurité Social</label></td>
+                        <td>@Html.TextBox("num_secu", null, new { style = "width : 150px" })</td>
+                    </tr>
+                    <tr>
+                        <td><label>N° Mutuel</label></td>
+                        <td>@Html.TextBox("num_mutuel", null, new { style = "width : 150px" })</td>
+                    </tr>
+                    <tr>
+                        <td><label>Allergie</label></td>
+                        <!--     <td>
+                            modifier juste le viewbag
+                                Html.DropDownList("allergie", (MultiSelectList)ViewBag.listeallergie)
+                             </td>
+                         </tr>-->
+                </table>
+
+                <input type="submit" name="inscription" value="Inscription" />
+            }
+        </fieldset>
+    </div>
+</body>
+</html>

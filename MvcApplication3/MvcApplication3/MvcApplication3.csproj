@@ -160,7 +160,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Client\" />
     <Folder Include="Views\Fournisseur\" />
     <Folder Include="Views\Pharmacien\" />
     <Folder Include="Views\Preparateur\" />
@@ -169,19 +168,61 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\index.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Shared\Error.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\ListeClients.cshtml" />
+    <Content Include="Views\Client\_Header.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Trouve.cshtml" />
+    <Content Include="Views\Client\_Menu.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\NonTrouve.cshtml" />
+    <Content Include="Views\Client\_MenuProfil.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Client\Connexion.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Client\DetailCommande.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Client\DetailMedicament.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Client\Historique.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Client\Inscription.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Client\ListeMedicament.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Client\Ordonnance.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Client\Panier.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Client\Profil.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Client\Question.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\_Header.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\_Menu.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\DetailMedicament.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\ListeMedicament.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_HeaderOffline.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
