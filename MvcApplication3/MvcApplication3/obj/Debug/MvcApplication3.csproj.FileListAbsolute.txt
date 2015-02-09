@@ -35,3 +35,37 @@ c:\users\julien\documents\visual studio 2013\Projects\MvcApplication3\MvcApplica
 c:\users\julien\documents\visual studio 2013\Projects\MvcApplication3\MvcApplication3\obj\Debug\MvcApplication3.csprojResolveAssemblyReference.cache
 c:\users\julien\documents\visual studio 2013\Projects\MvcApplication3\MvcApplication3\obj\Debug\MvcApplication3.dll
 c:\users\julien\documents\visual studio 2013\Projects\MvcApplication3\MvcApplication3\obj\Debug\MvcApplication3.pdb
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\obj\Debug\MvcApplication3.csprojResolveAssemblyReference.cache
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\obj\Debug\MvcApplication3.dll
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\obj\Debug\MvcApplication3.pdb
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\MvcApplication3.dll.config
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\MvcApplication3.dll
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\MvcApplication3.pdb
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\EntityFramework.dll
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\EntityFramework.SqlServer.dll
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\Newtonsoft.Json.dll
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\Oracle.DataAccess.dll
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\Oracle.ManagedDataAccess.dll
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\System.Web.Helpers.dll
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\System.Web.Mvc.dll
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\System.Web.Razor.dll
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\System.Web.WebPages.Deployment.dll
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\System.Web.WebPages.dll
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\System.Web.WebPages.Razor.dll
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\EntityFramework.xml
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\EntityFramework.SqlServer.xml
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\Newtonsoft.Json.xml
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\System.Web.Helpers.xml
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\System.Web.Mvc.xml
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\System.Web.Razor.xml
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\System.Web.WebPages.xml
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\System.Web.WebPages.Deployment.xml
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\System.Web.WebPages.Razor.xml
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\fr\System.Web.Helpers.resources.dll
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\fr\System.Web.Mvc.resources.dll
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\fr\System.Web.Razor.resources.dll
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\fr\System.Web.WebPages.resources.dll
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\fr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\julien\Source\Repos\ppjlt3\MvcApplication3\MvcApplication3\bin\fr\System.Web.WebPages.Razor.resources.dll
