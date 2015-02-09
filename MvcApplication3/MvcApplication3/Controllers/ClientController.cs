@@ -21,5 +21,13 @@ namespace MvcApplication3.Controllers
             return View();
         }
 
+        public ActionResult Inscription()
+        {
+            return View();
+        }
+        public ActionResult Panier()
+        {
+            return View();
+        }
     }
 }
