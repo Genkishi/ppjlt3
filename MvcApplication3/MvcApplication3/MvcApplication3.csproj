@@ -190,7 +190,7 @@
     <Content Include="Views\Client\DetailMedicament.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Client\Historique.cshtml" />
+    <Content Include="Views\Client\ListeCommande.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Client\Inscription.cshtml" />

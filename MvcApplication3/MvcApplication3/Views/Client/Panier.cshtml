@@ -11,7 +11,13 @@
 </head>
 <body>
     <div>
-        
+        @Html.Partial("~/Views/Client/_Header.cshtml")
+        @Html.Partial("~/Views/Client/_MenuProfil.cshtml")
+
+        <fieldset>
+            <legend>Panier</legend>
+            <input type="button" value="retour" style="width:100%;height:100%" onclick="location.href='@Url.Action("ListMedicament", "Client")'" />
+        </fieldset>
     </div>
 </body>
 </html>

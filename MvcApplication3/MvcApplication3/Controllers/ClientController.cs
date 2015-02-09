@@ -29,5 +29,45 @@ namespace MvcApplication3.Controllers
         {
             return View();
         }
+
+        public ActionResult Profil()
+        {
+            return View();
+        }
+
+        public ActionResult ListeCommande()
+        {
+            return View();
+        }
+
+        public ActionResult DetailCommande()
+        {
+            return View();
+        }
+
+        public ActionResult DetailMedicament()
+        {
+            return View();
+        }
+
+        public ActionResult ListeMedicament()
+        {
+            return View();
+        }
+
+        public ActionResult Ordonnance()
+        {
+            return View();
+        }
+
+        public ActionResult Panier()
+        {
+            return View();
+        }
+
+        public ActionResult Question()
+        {
+            return View();
+        }
     }
 }
