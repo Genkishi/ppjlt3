@@ -16,5 +16,10 @@ namespace MvcApplication3.Controllers
             return View();
         }
 
+        public ActionResult Connexion()
+        {
+            return View();
+        }
+
     }
 }
