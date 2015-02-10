@@ -36,7 +36,7 @@
             }
             <label>Total de la commande : <!--(((MvcApplication3.Models.Commande)(ViewData["Commande"])).Montant_Total)€--> </label>
 
-            @if ((((MvcApplication3.Models.Commande)(ViewData["Commande"])).ID_Etat) == 0)
+            @if ((((MvcApplication3.Models.Commande)(ViewData["Commande"])).ID_Etat)==0)
             {
                 using (Html.BeginForm())
                 {

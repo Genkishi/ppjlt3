@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width" />
     <title>PharmaWeb</title>
 </head>
-
 <body style="margin-left:20%; width:60%">
     @Html.Partial("~/Views/Shared/_Header.cshtml")
     @Html.Partial("~/Views/Shared/_MenuProfil.cshtml")
@@ -26,10 +25,9 @@
                 {
                     <tr>
                         <td>@commande.Date_Commande</td>
-                        <!--<td>client.Nom client.prenom</td>-->
                         <td>@commande.Montant_Total</td>
                         <td>@commande.ID_Etat</td>
-                        <td>@Html.ActionLink("Détails", "DetailCommande", "Pharmacien")</td>
+                        <td>@Html.ActionLink("Détails", "DetailCommande", "Client")</td>
                     </tr>
                 }
             </table>
