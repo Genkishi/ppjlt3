@@ -1,0 +1,37 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <input type="button" value="Retour" name="retour" onclick="location.href='@Url.Action("ListeCommande", "Fournisseur")'" />
+
+        @foreach (MvcApplication3.Models.Produit produits in ViewData["Produits"] as List<MvcApplication3.Models.Produit>)
+        {
+            <label style="float:left">@produits.Image</label>
+            <table>
+                <tr>
+                    <td>@produits.Nom</td>
+                    <!--modifié stock en quantité acheté-->
+                    <td>Quantité : @produits.Stock</td>
+                </tr>
+                <tr>
+                    <td>@produits.Prix €</td>
+                    <!--le calcul est a efectué dans le modele-->
+                    <td>@(produits.Prix * produits.Stock) €</td>
+                </tr>
+            </table>
+            <hr />
+        }
+        <label>Total de la commande : <!--(((MvcApplication3.Models.Commande)(ViewData["Commande"])).Montant_Total)€--> </label>
+    </div>
+
+</body>
+</html>
