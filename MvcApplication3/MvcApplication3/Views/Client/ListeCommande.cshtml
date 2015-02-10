@@ -1,0 +1,39 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>PharmaWeb</title>
+</head>
+
+<body style="margin-left:20%; width:60%">
+    @Html.Partial("~/Views/Shared/_Header.cshtml")
+    @Html.Partial("~/Views/Shared/_MenuProfil.cshtml")
+    <div style="margin-left:10%;margin-right:10%;margin-top:50px">
+        <fieldset>
+            <legend>Commandes</legend>
+            <table style="border:1px solid black">
+                <tr style="border:1px solid black">
+                    <th style="border:1px solid black">Date de la commande</th>
+                    <th style="border:1px solid black">Coût de la commande</th>
+                    <th style="border:1px solid black">Etat de la commande</th>
+                    <th style="border:1px solid black">Voir les détails</th>
+                </tr>
+                @foreach (MvcApplication3.Models.Commande commande in ViewData["Commandes"] as List<MvcApplication3.Models.Commande>)
+                {
+                    <tr>
+                        <td>@commande.Date_Commande</td>
+                        <!--<td>client.Nom client.prenom</td>-->
+                        <td>@commande.Montant_Total</td>
+                        <td>@commande.ID_Etat</td>
+                        <td>@Html.ActionLink("Détails", "DetailCommande", "Pharmacien")</td>
+                    </tr>
+                }
+            </table>
+        </fieldset>
+    </div>
+</body>
+</html>

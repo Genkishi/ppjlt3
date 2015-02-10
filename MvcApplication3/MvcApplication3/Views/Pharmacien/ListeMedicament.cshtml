@@ -1,6 +1,5 @@
 ﻿@{
     Layout = null;
-    int i = 0;
 }
 
 <!DOCTYPE html>
@@ -21,14 +20,7 @@
                 <input type="button" style="float:right" value="Détails" onclick="location.href='@Url.Action("DetailMedicament", "Client")'" />
                 @produits.Stock €<br />
                 <input type="button" style="width:100%" value="Ajout au panier" />
-            </div>
-
-            i++;
-            if (i == 3)
-            {
-                i = 0;
-                <br />
-            }
+            </div><br />
         }
     </div>
 </body>

@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>PharmaWeb</title>
+</head>
+<body style="margin-left:20%; width:60%">
+    @Html.Partial("~/Views/Shared/_HeaderOffline.cshtml")
+    @Html.Partial("~/Views/Pharmacien/_Menu.cshtml")
+    <div style="margin-left:20%;margin-top:100px">
+        <!--Formulaire de connexion-->
+        @using (Html.BeginForm())
+        {
+            <table style="margin-left: 170px">
+                <tr>
+                    <td style="width : 150px"><label>Login</label></td>
+                    <td>@Html.TextBox("login", null, new { style = "width : 150px" })</td>
+                </tr>
+                <tr>
+                    <td style="width : 150px"><label>Mot de passe</label></td>
+                    <td>@Html.Password("password", null, new { style = "width : 150px" })</td>
+                </tr>
+            </table><br />
+
+            <input style="margin-left : 270px" type="submit" name="Connexion" value="Connexion" />
+        }
+    </div>
+</body>
+</html>

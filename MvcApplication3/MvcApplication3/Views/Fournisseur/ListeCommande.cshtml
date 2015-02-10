@@ -1,0 +1,32 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>PharmaWeb</title>
+</head>
+<body>
+    <div>
+        <table style="border:1px solid black">
+            <tr style="border:1px solid black">
+                <th style="border:1px solid black">Date de la commande</th>
+                <th style="border:1px solid black">Coût de la commande</th>
+                <th style="border:1px solid black">Etat de la commande</th>
+                <th style="border:1px solid black">Voir les détails</th>
+            </tr>
+            @foreach (MvcApplication3.Models.Commande commande in ViewData["Commandes"] as List<MvcApplication3.Models.Commande>)
+            {
+                <tr>
+                    <td>@commande.Date_Commande</td>
+                    <td>@commande.Montant_Total</td>
+                    <td>@commande.ID_Etat</td>
+                    <td>@Html.ActionLink("Détails", "DetailCommande", "Fournisseur")</td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>

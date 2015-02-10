@@ -26,20 +26,20 @@ namespace MvcApplication3.Controllers
         /// <summary>
         /// test routes
         /// </summary>
-    
-        
-            //public string Index(int id)
-            //{
-            //    return "HomeController.Index " + id;
-            //}
 
 
-            public string Index(int? id)
-            {
-                return "HomeController.Index " + id;
-            }
+        //public string Index(int id)
+        //{
+        //    return "HomeController.Index " + id;
+        //}
 
-        
+
+        public string Index(int? id)
+        {
+            return "HomeController.Index " + id;
+        }
+
+
         public ActionResult ListeClients()
         {
             Clients clients = new Clients();
