@@ -9,29 +9,30 @@
     <meta name="viewport" content="width=device-width" />
     <title>PharmaWeb</title>
 </head>
-<body>
+<body style="margin-left:20%; width:60%">
     @Html.Partial("~/Views/Home/_Header.cshtml")
     @Html.Partial("~/Views/Home/_Menu.cshtml")
 
-                <label>image</label>
-                <table>
-                    @foreach (MvcApplication3.Models.Produit produits in ViewData["Produits"] as List<MvcApplication3.Models.Produit>)
-                {
+    <label>image</label>
+    <table>
+        @foreach (MvcApplication3.Models.Produit produits in ViewData["Produits"] as List<MvcApplication3.Models.Produit>)
+        {
 
 
-                        <tr>
-                            <td>@produits.Nom</td>
-                            <td>@produits.Stock</td>
+            <tr>
+                <td>@produits.Nom</td>
+                <td>@produits.Stock</td>
 
 
 
-                        </tr>
-                }
-                </table>
-                <input type="button" value="Ajout au panier" onclick="location.href='@Url.Action("DetailMedicament", "Home")'" /><br />
-             
-            </div>
-        
+            </tr>
+        }
+    </table>
+    <input type="button" value="Ajout au panier" onclick="location.href='@Url.Action("DetailMedicament", "Home")'" /><br />
+
+    </div>
+
     </div>
 </body>
+
 </html>

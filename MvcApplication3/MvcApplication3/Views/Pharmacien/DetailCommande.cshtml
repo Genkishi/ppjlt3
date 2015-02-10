@@ -10,12 +10,12 @@
     <title>Index</title>
 </head>
 <body style="margin-left:20%; width:60%">
-    @Html.Partial("~/Views/Shared/_Header.cshtml")
-    @Html.Partial("~/Views/Shared/_MenuProfil.cshtml")
+    @Html.Partial("~/Views/Pharmacien/_Header.cshtml")
+    @Html.Partial("~/Views/Pharmacien/_MenuProfil.cshtml")
     <div style="margin-left:10%;margin-right:10%; margin-top: 50px">
         <fieldset>
             <legend>Commandes</legend>
-            <input type="button" value="Retour" name="retour" onclick="location.href='@Url.Action("ListeCommande", "Client")'" />
+            <input type="button" value="Retour" name="retour" onclick="location.href='@Url.Action("ListeCommande", "Pharmacien")'" />
 
             @foreach (MvcApplication3.Models.Produit produits in ViewData["Produits"] as List<MvcApplication3.Models.Produit>)
             {
@@ -35,8 +35,20 @@
                 <hr />
             }
             <label>Total de la commande : <!--(((MvcApplication3.Models.Commande)(ViewData["Commande"])).Montant_Total)€--> </label>
+
+            @if ((((MvcApplication3.Models.Commande)(ViewData["Commande"])).ID_Etat)==0)
+            {
+                using (Html.BeginForm())
+                {
+                    if (!(((MvcApplication3.Models.Commande)(ViewData["Commande"])).Question).Equals(""))
+                    {
+                        <p>question de l'utilisateur</p>
+                        Html.TextArea("reponse");
+                    }
+                    <input type="submit" name="repondre" value="Répondre" />
+                }
+            }
         </fieldset>
     </div>
-
 </body>
 </html>

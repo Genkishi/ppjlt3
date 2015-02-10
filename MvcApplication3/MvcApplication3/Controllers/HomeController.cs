@@ -66,5 +66,12 @@ namespace MvcApplication3.Controllers
             return View("NonTrouve");
         }
 
+        public ActionResult DetailMedicament()
+        {
+            Produits produits = new Produits();
+            Produit produit = produits.Detail(1);
+            ViewData["Produit"] = produit;
+            return View();
+        }
     }
 }

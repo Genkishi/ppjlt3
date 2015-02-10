@@ -8,12 +8,8 @@
     <meta name="viewport" content="width=device-width" />
     <title>PharmaWeb</title>
 </head>
-<body style="margin-left:20%; width:60%">
-    @Html.Partial("~/Views/Shared/_Header.cshtml")
-    @Html.Partial("~/Views/Shared/_MenuProfil.cshtml")
-    <div style="margin-left:10%;margin-right:10%;margin-top:50px">
-        <fieldset>
-            <legend>Commandes</legend>
+<body>
+    <div>
             <table style="border:1px solid black">
                 <tr style="border:1px solid black">
                     <th style="border:1px solid black">Date de la commande</th>
@@ -27,11 +23,10 @@
                         <td>@commande.Date_Commande</td>
                         <td>@commande.Montant_Total</td>
                         <td>@commande.ID_Etat</td>
-                        <td>@Html.ActionLink("Détails", "DetailCommande", "Client")</td>
+                        <td>@Html.ActionLink("Détails", "DetailCommande", "Fournisseur")</td>
                     </tr>
                 }
             </table>
-        </fieldset>
     </div>
 </body>
 </html>

@@ -9,9 +9,17 @@
     <meta name="viewport" content="width=device-width" />
     <title>Ordonnance</title>
 </head>
-<body>
+<body style="margin-left:20%; width:60%">
     <div>
-        
+        @Html.Partial("~/Views/Shared/_Header.cshtml")
+        @Html.Partial("~/Views/Shared/_MenuProfil.cshtml")
+
+        <fieldset>
+            <legend>Panier</legend>
+
+            <input type="submit" value="Retour" name="retour" onclick="location.href='@Url.Action("Panier", "Client")'" />
+            <input type="submit" value="Suivant(question)" name="suivant" onclick="location.href='@Url.Action("Question", "Client")'" />
+        </fieldset>
     </div>
 </body>
 </html>

@@ -9,14 +9,16 @@
     <meta name="viewport" content="width=device-width" />
     <title>Panier</title>
 </head>
-<body>
+<body style="margin-left:20%; width:60%">
     <div>
-        @Html.Partial("~/Views/Client/_Header.cshtml")
-        @Html.Partial("~/Views/Client/_MenuProfil.cshtml")
+        @Html.Partial("~/Views/Shared/_Header.cshtml")
+        @Html.Partial("~/Views/Shared/_MenuProfil.cshtml")
 
         <fieldset>
             <legend>Panier</legend>
-            <input type="button" value="retour" style="width:100%;height:100%" onclick="location.href='@Url.Action("ListMedicament", "Client")'" />
+            
+            <input type="submit" value="Suivant(ordo))" name="suivant" onclick="location.href='@Url.Action("Ordonnance", "Client")'" />
+            <input type="submit" value="Suivant(question)" name="suivant" onclick="location.href='@Url.Action("Question", "Client")'" />
         </fieldset>
     </div>
 </body>

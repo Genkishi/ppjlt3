@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width" />
     <title>PharmaWeb</title>
 </head>
-<body>
-    @Html.Partial("~/Views/Client/_Header.cshtml")
-    @Html.Partial("~/Views/Client/_MenuProfil.cshtml")
+<body style="margin-left:20%; width:60%">
+    @Html.Partial("~/Views/Shared/_Header.cshtml")
+    @Html.Partial("~/Views/Shared/_MenuProfil.cshtml")
     <div>
-        <fieldset>
+        <fieldset style="margin-left:10%;margin-right:10%;margin-top:50px">
             <legend>Profil</legend>
             @using (Html.BeginForm())
             {
@@ -72,10 +72,10 @@
                     <tr>
                         <td><label>Allergie</label></td>
                         <!--     <td>
-                            modifier juste le viewbag
-                                Html.DropDownList("allergie", (MultiSelectList)ViewBag.listeallergie)
-                             </td>
-                         </tr>-->
+                        modifier juste le viewbag
+                            Html.DropDownList("allergie", (MultiSelectList)ViewBag.listeallergie)
+                         </td>
+                     </tr>-->
                 </table>
 
                 <input type="submit" name="inscription" value="Inscription" />

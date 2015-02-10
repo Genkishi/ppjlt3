@@ -161,8 +161,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Fournisseur\" />
-    <Folder Include="Views\Pharmacien\" />
     <Folder Include="Views\Preparateur\" />
   </ItemGroup>
   <ItemGroup>
@@ -172,10 +170,10 @@
     <Content Include="Views\Shared\Error.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Client\_Header.cshtml" />
+    <Content Include="Views\Shared\_Header.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Client\_Menu.cshtml" />
+    <Content Include="Views\Shared\_Menu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Client\_MenuProfil.cshtml" />
@@ -211,12 +209,6 @@
     <Content Include="Views\Client\Question.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\_Header.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Home\_Menu.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Home\DetailMedicament.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -224,6 +216,45 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_HeaderOffline.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Fournisseur\Connexion.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Fournisseur\DetailCommande.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Fournisseur\ListeCommande.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Pharmacien\Connexion.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Pharmacien\DetailCommande.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Pharmacien\DetailMedicament.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Pharmacien\DetailOrdonnance.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Pharmacien\ListeCommande.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Pharmacien\ListeMedicament.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Pharmacien\ListeOrdonnance.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Pharmacien\Panier.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Pharmacien\AjoutProduit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Pharmacien\_MenuProfil.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
