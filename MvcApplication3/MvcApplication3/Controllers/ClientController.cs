@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using System.Web.SessionState;
 
 namespace MvcApplication3.Controllers
 {
@@ -29,6 +28,10 @@ namespace MvcApplication3.Controllers
         }
         public ActionResult Panier()
         {
+            Produits produits = new Produits();
+            Commandes commande = new Commandes();
+            ViewData["Produits"] = produits.ObtenirListeProduits();
+            ViewData["Commande"] = commande.Détail(1);
             return View();
         }
 

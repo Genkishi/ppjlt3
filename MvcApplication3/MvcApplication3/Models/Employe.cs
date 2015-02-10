@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations;
 
 namespace MvcApplication3.Models
 {
@@ -14,6 +15,7 @@ namespace MvcApplication3.Models
         public string Poste;
         public int ID_Pharmacie;
         public string Nom_Pharmacie;
+
         public string Login;
         public string MDP;
     }

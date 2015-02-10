@@ -12,11 +12,28 @@
 <body style="margin-left:20%; width:60%">
     <div>
         @Html.Partial("~/Views/Shared/_Header.cshtml")
-        @Html.Partial("~/Views/Shared/_MenuProfil.cshtml")
+        @Html.Partial("~/Views/Shared/_Menu.cshtml")
 
         <fieldset>
             <legend>Panier</legend>
             
+            @foreach (MvcApplication3.Models.Produit produits in ViewData["Produits"] as List<MvcApplication3.Models.Produit>)
+            {
+                <label style="float:left">@produits.Image</label>
+                <table>
+                    <tr>
+                        <td>@produits.Nom</td>
+                        <!--modifié stock en quantité acheté-->
+                        <td> <input type="number" /> </td>
+                    </tr>
+                    <tr>
+                        <td>@produits.Prix €</td>
+                        <td>@(produits.Prix * produits.Stock) €</td>
+                    </tr>
+                </table>
+                <hr />
+            }
+
             <input type="submit" value="Suivant(ordo))" name="suivant" onclick="location.href='@Url.Action("Ordonnance", "Client")'" />
             <input type="submit" value="Suivant(question)" name="suivant" onclick="location.href='@Url.Action("Question", "Client")'" />
         </fieldset>
