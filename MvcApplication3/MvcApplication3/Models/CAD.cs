@@ -6,10 +6,11 @@ using Oracle.DataAccess.Client;
 namespace MvcApplication3.Models
 {
     public class CAD
-    {
+    {// CAD 192.168.0.10:1521/pharm
+        // login :oranet mdp:123
         private static string GetConnectionString()
         {
-            String connString = "host= serverName;database=myDatabase;uid=userName;pwd=passWord";
+            String connString = "host= 192.168.0.10:1521;database=pharm;uid=oranet;pwd=123";
             return connString;
         }
 
@@ -25,7 +26,7 @@ namespace MvcApplication3.Models
                                   connection.ConnectionString);
 
                 OracleCommand command = connection.CreateCommand();
-                string sql = "SELECT * FROM myTableName";
+                string sql = "SELECT * FROM USER";
                 command.CommandText = sql;
 
                 OracleDataReader reader = command.ExecuteReader();

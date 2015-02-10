@@ -12,19 +12,25 @@
     @Html.Partial("~/Views/Client/_Header.cshtml")
     @Html.Partial("~/Views/Client/_Menu.cshtml")
     <div>
-        @foreach (MvcApplication3.Models.Produit produits in ViewData["Produits"] as List<MvcApplication3.Models.Produit>)
-        {
-           
-                <label>image</label>
-              <tr> <td>@(produits.Nom)</td>
-              <td>@(produits.Stock)</td>
+        <table>
+            @foreach (MvcApplication3.Models.Produit produits in ViewData["Produits"] as List<MvcApplication3.Models.Produit>)
+            {
 
- 
-                </tr>  
-                <input type="button" value="Ajout au panier" onclick="location.href='@Url.Action("DetailMedicament", "Client")'" /><br />
-                <input type="button" value="Ajout au panier" />
-           
-        }
+
+                <tr>
+                    <td>@produits.Nom</td>
+                    <td>@produits.Stock</td>
+
+                   <td><input type="button" value="Ajout au panier" onclick="location.href='@Url.Action("DetailMedicament", "Client")'" /></td> 
+                    
+
+                </tr>
+            }
+        </table>
+
+
+
+       
     </div>
 </body>
 </html>

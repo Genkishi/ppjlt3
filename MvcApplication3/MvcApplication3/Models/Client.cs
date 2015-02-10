@@ -12,8 +12,8 @@ namespace MvcApplication3.Models
     {
         public string Nom { get; set; }
         public int Age { get; set; }
-        public String Civilite { get; set; }
-        public String Prenom { get; set; }
+        public string Civilite { get; set; }
+        public string Prenom { get; set; }
         public String Adresse { get; set; }
         public int CodePostal{ get; set; }
         public DateTime DateNaissance { get; set; }
@@ -26,7 +26,7 @@ namespace MvcApplication3.Models
         public String TauxRemboursement { get; set; }
         public String Login { get; set; }
         public String MDP { get; set; }
-         public List<String> Allergie { get; set; }
+        public List<String> Allergie { get; set; }
 
         
 

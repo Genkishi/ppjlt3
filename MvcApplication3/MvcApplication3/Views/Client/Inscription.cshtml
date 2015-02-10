@@ -1,5 +1,63 @@
 ﻿@{
-    Layout = null;
+    
+         
+
+    if (IsPost)
+    {
+        var errors = false;
+        
+        var Nom = Request["Nom"];
+        var Mail= Request["Mail"];
+        var Prenom = Request["Prenom"];
+        var Adresse = Request["Adresse"];
+        var Telephone = Request["Telephone"];
+        var Email = Request["Email"];
+        var MDP = Request["MDP"];
+        var CMDP= Request["CMDP"];
+        var CP = Request ["CP"];
+        var Secu = Request ["Secu"];
+        var Mutu = Request["Mutu"];
+
+        ViewData["Nom"] = Request["Nom"];
+        
+          <div>
+        Hello <span style="color:red">@ViewData["Nom"]</span>
+    </div>
+        
+        if (Nom.IsEmpty())
+        {
+            errors = true;
+            @:Le nom du client est obligatoire.<br />
+            }
+    
+        if (Prenom.IsEmpty())
+        {
+            errors = true;
+            @:Le prénom du client est obligatoire.<br />
+            }
+       
+        if (Email.IsEmpty())
+        {
+            errors = true;
+            @:L'adresse mail du client est obligatoire.<br />
+        }
+          
+        if (Secu.IsEmpty())
+        {
+            errors = true;
+            @:Le numéro de sécurité social est obligatoire.<br />
+        }
+
+        if (errors == false)
+        {
+            //action à effectuer
+            Response.Redirect(@Href("~/Client/Inscription"));
+        }
+
+    }
+
+    
+   
 }
 
 <!DOCTYPE html>
@@ -12,75 +70,84 @@
     @Html.Partial("~/Views/Shared/_HeaderOffline.cshtml")
     @Html.Partial("~/Views/Client/_Menu.cshtml")
     <div>
-        <fieldset>
-            <legend>Formulaire d'inscription</legend>
-            @using (Html.BeginForm())
-            {
-                <table>
-                    <tr>
-                        <td><label>Nom</label></td>
-                        <td>@Html.TextBox("nom", null, new { style = "width : 150px" })</td>
-                    </tr>
-                    <tr>
-                        <td><label>Prénom</label></td>
-                        <td>@Html.TextBox("prenom", null, new { style = "width : 150px" })</td>
-                    </tr>
-                    <tr>
-                        <td><label>Login</label></td>
-                        <td>@Html.TextBox("login", null, new { style = "width : 150px" })</td>
-                    </tr>
-                    <tr>
-                        <td><label>Mot de passe</label></td>
-                        <td>@Html.Password("password", null, new { style = "width : 150px" })</td>
-                    </tr>
-                    <tr>
-                        <td><label>Confirmation mot de passe</label></td>
-                        <td>@Html.Password("confirmpassword", null, new { style = "width : 150px" })</td>
-                    </tr>
-                    <tr>
-                        <td><label>Adresse</label></td>
-                        <td>@Html.TextBox("adresse", null, new { style = "width : 150px" })</td>
-                    </tr>
-                    <tr>
-                        <td><label>Ville</label></td>
-                        <td>@Html.TextBox("ville", null, new { style = "width : 150px" })</td>
-                    </tr>
-                    <tr>
-                        <td><label>Code Postal</label></td>
-                        <td>@Html.TextBox("codepostal", null, new { style = "width : 150px" })</td>
-                    </tr>
-                    <tr>
-                        <td><label>Date de naissance</label></td>
-                        <td>@Html.TextBox("date_naissance", null, new { style = "width : 150px" })</td>
-                    </tr>
-                    <tr>
-                        <td><label>N° Téléphone</label></td>
-                        <td>@Html.TextBox("telephone", null, new { style = "width : 150px" })</td>
-                    </tr>
-                    <tr>
-                        <td><label>Adresse Mail</label></td>
-                        <td>@Html.TextBox("mail", null, new { style = "width : 150px" })</td>
-                    </tr>
-                    <tr>
-                        <td><label>N° Sécurité Social</label></td>
-                        <td>@Html.TextBox("num_secu", null, new { style = "width : 150px" })</td>
-                    </tr>
-                    <tr>
-                        <td><label>N° Mutuel</label></td>
-                        <td>@Html.TextBox("num_mutuel", null, new { style = "width : 150px" })</td>
-                    </tr>
-                    <tr>
-                        <td><label>Allergie</label></td>
-                        <!--     <td>
-                            modifier juste le viewbag
-                                Html.DropDownList("allergie", (MultiSelectList)ViewBag.listeallergie)
-                             </td>
-                         </tr>-->
-                </table>
+        
+       
+        <form method="post" action="Connexion">
+            <fieldset>
+                <legend>Nouveau client</legend>
+                <div>
+                    <label>Nom:</label>
+                </div>
+                <div>
+                    <input name="Nom" type="text" size="50" value="@Request["Nom"]" />
+                </div>
+                <div>
+                    <label>Prénom:</label>
+                </div>
+                <div>
+                    <input name="Prenom" type="text" size="50" value="@Request["Prenom"]" />
+                </div>
+                <div>
+                    <label>Adresse mail:</label>
+                </div>
+                <div>
+                    <input name="Email" type="text" size="50" value="" />
+                </div>
+                <div>
+                    <label>Mot de passe:</label>
+                </div>
+                <div>
+                    <input name="MDP" type="text" size="50" value="" />
+                </div>
+                <div>
+                    <label>Confirmation Mot De Passe:</label>
+                </div>
+                <div>
+                    <input name="CMDP" type="text" size="50" value="" />
+                </div>
+                <div>
+                    <label>Adresse:</label>
+                </div>
+                <div>
+                    <input name="Adresse" type="text" size="50" value="" />
+                </div>
+                <div>
+                    <label>Code Postal:</label>
+                </div>
+                <div>
+                    <input name="CP" type="text" size="50" value="" />
+                </div>
+                <div>
+                    <label>Date De Naissance:</label>
+                </div>
+                <div>
+                    <input name="DateNaissance" type="text" size="50" value="" />
+                </div>
+                <div>
+                    <label>Numéro de Telephone:</label>
+                </div>
+                <div>
+                    <input name="Telephone" type="text" size="50" value="" />
+                </div>
+                <div>
+                    <label>Numéro de Securité Sociale:</label>
+                </div>
+                <div>
+                    <input name="Secu" type="text" size="50" value="" />
+                </div>
+                <div>
+                    <label>Numéro de Mutuelle:</label>
+                </div>
+                <div>
+                    <input name="Mutu" type="text" size="50" value="" />
+                </div>
+                <div>
+                    <label>&nbsp;</label>
+                    <input type="submit" value="Enregistrer" class="submit" />
+                </div>
+            </fieldset>
 
-                <input type="submit" name="inscription" value="Inscription" />
-            }
-        </fieldset>
+        </form>
     </div>
 </body>
 </html>
